@@ -20,8 +20,7 @@ class NewTrade
      * Create a new event instance.
      *
      * @return void
-     */
-    
+     */  
     public function __construct($trade)
     {
         $this->trade = $trade;
