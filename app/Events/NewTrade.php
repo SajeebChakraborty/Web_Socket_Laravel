@@ -14,14 +14,16 @@ class NewTrade
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
+    public $trade;
+
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($trade)
     {
-        //
+        $this->trade = $trade;
     }
 
     /**
@@ -31,6 +33,6 @@ class NewTrade
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('channel-name');
+        return new Channel('trades');
     }
 }
