@@ -13,9 +13,8 @@ use Illuminate\Queue\SerializesModels;
 class NewTrade
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
-    
-    public $trade;
 
+    public $trade;
     /**
      * Create a new event instance.
      *
