@@ -33,6 +33,7 @@ class NewTrade
      */
     public function broadcastOn()
     {                                 
-        return new Channel('trades');                                   
+        return new Channel('trades');    
+                                       
     }
 }
