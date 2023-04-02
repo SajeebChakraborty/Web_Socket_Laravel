@@ -15,12 +15,13 @@ class NewTrade
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     public $trade;
-    
+
     /**
      * Create a new event instance.
      *
      * @return void
      */
+    
     public function __construct($trade)
     {
         $this->trade = $trade;
