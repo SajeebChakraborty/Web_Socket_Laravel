@@ -15,6 +15,7 @@ class NewTrade
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     public $trade;
+    
     /**
      * Create a new event instance.
      *
