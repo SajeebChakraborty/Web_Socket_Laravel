@@ -13,7 +13,6 @@ use Illuminate\Queue\SerializesModels;
 class NewTrade
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
-
     public $trade;
 
     /**
